@@ -29,6 +29,7 @@ jobs:
             rodddmarques/rotten-potatoes:latest
             rodddmarques/rotten-potatoes:${{ github.run_number }}
   CD:
+    needs: [CI]
     runs-on: ubuntu-latest
     
     steps:
